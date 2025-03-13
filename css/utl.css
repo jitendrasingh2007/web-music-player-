@@ -1,0 +1,96 @@
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.items-center{
+    align-items: center;
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333; 
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #222; 
+  
+  }
+  .disno{
+    display: none;
+    transition: all 0.6s ease;
+  }
+
+  .disnon {
+      padding: 0;
+      transition: all 0.6s ease;
+      width: 0px;
+     
+      
+  }
+
+.progress-bar-container {
+    position: relative;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.7s ease;
+}
+.progress-bar-container:hover {
+  height: 8px; /* Increase height on hover */
+}
+
+.progress-bar-container:hover .progress-thumb {
+  /* transform: translate(-50%, -50%) scale(1.2); Enlarge thumb on hover */
+  transition: width 0.8s linear;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: black;
+}
+
+.progress-thumb {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 8px;
+  background-color: rgb(47, 0, 200);
+  
+  cursor: pointer;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgb(47, 0, 200);
+  width: 0%;
+  transition: width 0.2s linear;
+}
+#musiclen{
+    display: flex;
+    position: absolute;
+    right: 29px;
+    bottom: 9px;
+    gap: 21px;
+    width: 70%;
+    align-items: center;
+    transition: all 0.7s ease;
+    cursor: pointer;
+
+}
